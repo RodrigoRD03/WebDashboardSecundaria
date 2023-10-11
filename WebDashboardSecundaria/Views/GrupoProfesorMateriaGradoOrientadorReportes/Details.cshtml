@@ -1,0 +1,59 @@
+﻿@model WebDashboardSecundaria.Models.GrupoProfesorMateriaGradoOrientadorReportes
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GrupoProfesorMateriaGradoOrientadorReportes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GrupoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrupoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfesorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfesorID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MateriaGradoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MateriaGradoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrientadorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrientadorID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CicloEscolarID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CicloEscolarID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

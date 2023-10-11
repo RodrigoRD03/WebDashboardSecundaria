@@ -1,0 +1,62 @@
+﻿@model WebDashboardSecundaria.Models.Administrador
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://kit.fontawesome.com/a3c9717c3d.js" crossorigin="anonymous"></script>
+    <link href="~/Styles/InicioSesion.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="app__SignUp">
+        <div class="app__SignUp-form">
+            <div class="app__SignUp-form_section">
+                <div class="app__SignUp-form_section-Title">
+                    <p>Inicia Sesión</p>
+                    <p>en la Cuenta</p>
+                </div>
+                @using (Html.BeginForm())
+                {
+                    <div class="app__SignUp-form_section-inputs">
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="SignUp-input-email">
+                            <span>
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <span class="Line-SignUP"></span>
+                            @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @type = "mail" } })
+                            @*<input type="email" name="email" value="" />*@
+                        </div>
+                        <div class="SignUp-input-password">
+                            <span>
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <span class="Line-SignUP"></span>
+                            @Html.EditorFor(model => model.Contraseña, new { htmlAttributes = new { @class = "input-password-su", @id = "password", @type = "password" } })
+                            @*<input class="input-password-su" type="password" name="password" value="" />*@
+                            <span class="Line-SignUP"></span>
+                            <span class="IconEye-su">
+                                <i class="fa-solid fa-eye"></i>
+                            </span>
+                        </div>
+                        <div class="text-danger"> @ViewBag.ErrorMsg</div>
+                        <button class="SignUp-input-btn">
+                            Inicia Sesión
+                        </button>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="app__SignUp-Img">
+        </div>
+    </div>
+    <script src="~/Scripts/ViewPassword.js"></script>
+</body>
+</html>

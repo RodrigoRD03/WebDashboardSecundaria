@@ -1,0 +1,242 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-100: #61DAFB;
+    --primary-200: #39bcdc;
+    --primary-300: #007997;
+    --accent-100: #FF4081;
+    --accent-200: #ffe4ff;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --bg-100: #282C34;
+    --bg-200: #383c44;
+    --bg-300: #50555e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.app__SignUp {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template:
+       "Form Img" /
+        50% 50%;
+}
+
+.app__SignUp-form {
+    grid-area: Form;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Syne', sans-serif;
+}
+
+.app__SignUp-form_section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.app__SignUp-form_section-Title {
+    font-size: 2em;
+}
+
+.app__SignUp-form_section-inputs {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.SignUp-input-email {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--text-200);
+    border-radius: 15px;
+}
+
+.SignUp-input-email:after {
+    position: absolute;
+    content: "Correo";
+    top: -22.5px;
+    left: 25px;
+    background: #fff;
+    padding: 10px;
+} 
+
+.SignUp-input-email span:first-child {
+    height: 60px;
+    width: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Line-SignUP {
+    height: 50%;
+    width: 1px;
+    background-color: var(--text-200);
+}
+
+.SignUp-input-email input {
+    height: 56px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.SignUp-input-password {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--text-200);
+    border-radius: 15px;
+}
+
+.SignUp-input-password::after {
+    position: absolute;
+    content: "Contraseña";
+    top: -22.5px;
+    left: 25px;
+    background: #fff;
+    padding: 10px;
+}
+
+
+.SignUp-input-password span:first-child,
+.SignUp-input-password span:last-child{
+    height: 60px;
+    width: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUp-input-password input {
+    height: 56px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+
+    font-size: 1.1em;
+}
+
+.SignUp-input-btn {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+
+    border-radius: 15px;
+    border: none;
+
+    color: #fff;
+    font-size: 1.2em;
+    transition: .3s;
+}
+
+.SignUp-input-btn:hover{
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2)
+}
+
+.app__SignUp-Img {
+    grid-area: Img;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/IMGSU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1230px){
+    .app__SignUp-form_section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .app__SignUp-form_section {
+        width: 80%;
+    }
+    .app__SignUp {
+        grid-template:
+            "Form" /
+            100%;
+    }
+    .app__SignUp-form {
+        background-image: url("../Assets/IMGSU.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .app__SignUp-form_section {
+        background: linear-gradient( 135deg, rgba(225, 255, 255, 0.1), rgba(225, 255, 255, 0.1), );
+        backdrop-filter: blur(14px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .app__SignUp-form_section-Title {
+        color: #fff;
+    }
+    .SignUp-input-email {
+        background: #fff;
+    }
+    .SignUp-input-email input{
+        width: 99%;
+    }
+    .SignUp-input-email::after {
+        background-color: rgba(255, 255, 255, 0);
+        color: var(--primary-100);
+        font-weight: 600;
+        left: 0;
+        top: -40px;
+    }
+ 
+    .SignUp-input-password {
+        background: #fff;
+        margin-top: 30px;
+    }
+    .SignUp-input-password::after {
+        background-color: rgba(255, 255, 255, 0);
+        color: var(--primary-100);
+        left: 0;
+        top: -40px;
+    }
+
+    .app__SignUp-Img {
+        display: none;
+    }
+}
