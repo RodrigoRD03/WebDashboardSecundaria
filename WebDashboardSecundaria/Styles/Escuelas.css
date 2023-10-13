@@ -1,0 +1,230 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-100: #61DAFB;
+    --primary-200: #39bcdc;
+    --primary-300: #007997;
+    --accent-100: #FF4081;
+    --accent-200: #ffe4ff;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --bg-100: #282C34;
+    --bg-200: #383c44;
+    --bg-300: #50555e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.view {
+    display: flex;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #383838;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app__secundaria-nav {
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-left: -20px;
+}
+
+.icon-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.icon-nav::after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 100%;
+    left: -20px;
+    background: #fff;
+    border-top-right-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+}
+
+.icon-settings {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.app__secundaria-content {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.app__secundaria-content_list {
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.app__secundaria-add {
+    width: 275px;
+    height: 200px;
+    background-color: var(--primary-300);
+    
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-add-content {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25vh;
+    background-color: var(--primary-100);
+
+    color: #fff;
+    font-size: 1.3em;
+}
+
+a:not(.icon-add-content) {
+    text-decoration: none;
+}
+
+.app__secundaria-item {
+    position: relative;
+    width: 275px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.app__secundaria-item_menu {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+
+    flex-direction: column;
+    gap: 10px;
+
+    border-radius: 10px;
+    font-size: .8em;
+    right: 20px;
+}
+
+.option-menu {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-menu:first-child {
+    color: green
+}
+
+
+.option-menu:last-child {
+    color: red;
+}
+
+.view {
+    display: flex;
+}
+.icon-menu_item {
+    align-self: flex-end;
+    color: #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.app__secundaria-item_info {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.app__secundaria-item_info-NL {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app__secundaria-item_info-NL div{
+    position: relative;
+    width: max-content;
+    z-index: 1;
+    padding: 0px 5px 0px 5px;
+    font-weight: 600;
+}
+
+.app__secundaria-item_info-NL div::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-100);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.app__secundaria-item_info-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50vh;
+
+    cursor: pointer;
+}
+
+.app__secundaria-item:nth-child(even) {
+    background-image: url("../Assets/Img-item1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.app__secundaria-item:nth-child(odd){
+    background-image: url("../Assets/Img-item2.jpg");
+    background-position: center;
+    background-size: cover;
+}

@@ -1,52 +1,77 @@
 ﻿@model IEnumerable<WebDashboardSecundaria.Models.Escuelas>
 
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
 
-<h2>Index</h2>
+<!DOCTYPE html>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Administrador.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Direccion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Estatus)
-        </th>
-        <th></th>
-    </tr>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+    <script src="https://kit.fontawesome.com/a3c9717c3d.js" crossorigin="anonymous"></script>
+    <link href="~/Styles/Escuelas.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <nav class="app__secundaria-nav">
+        <div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Administrador.Nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Direccion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Estatus)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+        </div>
+        <div>
+            <span class="icon-nav">
+                <lord-icon src="https://cdn.lordicon.com/isimtviy.json"
+                           trigger="hover"
+                           colors="primary:#e4e4e4,secondary:#e4e4e4"
+                           style="width:50px;height:50px">
+                </lord-icon>
+            </span>
+        </div>
+        <div>
+            <span class="icon-settings">
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </div>
+    </nav>
+    <div class="app__secundaria-content">
+        <div class="app__secundaria-content_present">
+            <h1>Bienvenido,</h1>
+            <p>Juan Daniel Garcia Alvarado</p>
+        </div>
+        <div class="app__secundaria-content_list">
+            
+                @Html.ActionLink("Añadir", "Create", null, new { @class = "icon-add-es" })
 
-</table>
+
+            @foreach (var item in Model)
+            {
+                <div class="app__secundaria-item">
+                    <div class="app__secundaria-item_menu">
+                        @Html.ActionLink("Editar", "Edit", new { id = item.ID }, new { @class = "option-menu icon-edit-es" })
+                        @Html.ActionLink("Detalles", "Details", new { id = item.ID }, new { @class = "option-menu icon-details-es" })
+                        @Html.ActionLink("Eliminar", "Delete", new { id = item.ID }, new { @class = "option-menu icon-delate-es" })
+                    </div>
+                    <span class="icon-menu_item">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </span>
+                    <div class="app__secundaria-item_info">
+                        <div class="app__secundaria-item_info-NL">
+                            <div>@Html.DisplayFor(modelItem => item.Nombre)</div>
+                            <div>@Html.DisplayFor(modelItem => item.Direccion)</div>
+                        </div>
+                        <div class="app__secundaria-item_info-btn">
+                            <span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <script src="~/Scripts/IconosEscuelas-Index.js"></script>
+</body>
+</html>

@@ -5,47 +5,64 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3c9717c3d.js" crossorigin="anonymous"></script>
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <link href="~/Styles/DashboardStyles.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Dashboard", "Index", "Escuelas", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Escuelas", "Index", "Escuelas")</li>
-                    <li>@Html.ActionLink("Alumnos", "Index", "Alumnoes")</li>
-                    <li>@Html.ActionLink("CicloEscolar", "Index", "CicloEscolar")</li>
-                    <li>@Html.ActionLink("GrupoAlumnos", "Index", "GrupoAlumnos")</li>
-                    <li>@Html.ActionLink("GrupoProfesorMateriaGradoOrientadorReportes", "Index", "GrupoProfesorMateriaGradoOrientadorReportes")</li>
-                    <li>@Html.ActionLink("Grupos", "Index", "Grupos")</li>
-                    <li>@Html.ActionLink("Grados", "Index", "Gradoes")</li>
-                    <li>@Html.ActionLink("MateriaGrados", "Index", "MateriaGrados")</li>
-                    <li>@Html.ActionLink("Materias", "Index", "Materias")</li>
-                    <li>@Html.ActionLink("Orientadores", "Index", "Orientadores")</li>
-                    <li>@Html.ActionLink("Profesores", "Index", "Profesores")</li>
-                    <li>@Html.ActionLink("TutorAlumnos", "Index", "TutorAlumnos")</li>
-                    <li>@Html.ActionLink("Tutores", "Index", "Tutores")</li>
-                </ul>
-            </div>
+    <nav class="app__secundaria-nav">
+        <div>
+
         </div>
-    </div>
-    <div class="container body-content">
+        <div>
+
+            @Html.ActionLink("Escuelas", "Index", "Escuelas", null, new { @class = "icon-Escuela-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Alumnos", "Index", "Alumnoes", null, new { @class = "icon-Alumnos-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("CicloEscolar", "Index", "CicloEscolar", null, new { @class = "icon-CicloEscolar-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("GrupoAlumnos", "Index", "GrupoAlumnos", null, new { @class = "icon-GrupoAlumnos-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("GrupoProfesorMateriaGradoOrientadorReportes", "Index", "GrupoProfesorMateriaGradoOrientadorReportes", null, new { @class = "icon-LargeData-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Grupos", "Index", "Grupos", null, new { @class = "icon-Grupos-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Grados", "Index", "Gradoes", null, new { @class = "icon-Grados-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("MateriaGrados", "Index", "MateriaGrados", null, new { @class = "icon-MateriaGrados-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Materias", "Index", "Materias", null, new { @class = "icon-Materias-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Orientadores", "Index", "Orientadores", null, new { @class = "icon-Orientadores-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Profesores", "Index", "Profesores", null, new { @class = "icon-Profesores-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("TutorAlumnos", "Index", "TutorAlumnos", null, new { @class = "icon-TutorAlumnos-DBD", title = "Texto del Tooltip" })
+
+            @Html.ActionLink("Tutores", "Index", "Tutores", null, new { @class = "icon-Tutores-DBD", title = "Texto del Tooltip" })
+
+
+
+        </div>
+        <div>
+            <span class="icon-settings">
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </div>
+    </nav>
+    <div class="app__secundaria-content">
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
         </footer>
     </div>
+
+
+    <script src="~/Scripts/IconsDashboard.js"></script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

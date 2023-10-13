@@ -1,0 +1,93 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-100: #61DAFB;
+    --primary-200: #39bcdc;
+    --primary-300: #007997;
+    --accent-100: #FF4081;
+    --accent-200: #ffe4ff;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --bg-100: #282C34;
+    --bg-200: #383c44;
+    --bg-300: #50555e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #383838 !important;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app__secundaria-nav {
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-left: -20px;
+}
+
+.app__secundaria-nav div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+}
+
+.icon-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    font-size: 2em;
+}
+
+.icon-nav::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 100%;
+    left: -20px;
+    background: #fff;
+    border-top-right-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+}
+
+.icon-settings {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.app__secundaria-content {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
