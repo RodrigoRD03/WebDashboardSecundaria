@@ -10,9 +10,9 @@ namespace WebDashboardSecundaria.Models
     {
         public int ID { get; set; }
 
-        public int GrupoID { get; set; }
+        public int GrupoesID { get; set; }
 
-        public int AlumnoID { get; set; }
+        public int AlumnoesID { get; set; }
 
         public virtual Alumnoes Alumnoes { get; set; }
 

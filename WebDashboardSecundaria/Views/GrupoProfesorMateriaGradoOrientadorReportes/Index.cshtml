@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebDashboardSecundaria.Models.GrupoProfesorMateriaGradoOrientadorReportes>
+﻿@Model IEnumerable<WebDashboardSecundaria.Models.GrupoProfesorMateriaGradoOrientadorReportes>
 
 @{
     ViewBag.Title = "Index";
@@ -13,19 +13,19 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.GrupoID)
+            @Html.DisplayNameFor(Model => Model.GrupoID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ProfesorID)
+            @Html.DisplayNameFor(Model => Model.ProfesorID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MateriaGradoID)
+            @Html.DisplayNameFor(Model => Model.MateriaGradoID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.OrientadorID)
+            @Html.DisplayNameFor(Model => Model.OrientadorID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CicloEscolarID)
+            @Html.DisplayNameFor(Model => Model.CicloEscolarID)
         </th>
         <th></th>
     </tr>
@@ -33,19 +33,19 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.GrupoID)
+            @Html.DisplayFor(ModelItem => item.GrupoID)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ProfesorID)
+            @Html.DisplayFor(ModelItem => item.ProfesorID)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MateriaGradoID)
+            @Html.DisplayFor(ModelItem => item.MateriaGradoID)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.OrientadorID)
+            @Html.DisplayFor(ModelItem => item.OrientadorID)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CicloEscolarID)
+            @Html.DisplayFor(ModelItem => item.CicloEscolarID)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

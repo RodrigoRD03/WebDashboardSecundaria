@@ -1,5 +1,4 @@
-﻿var escuela = document.querySelector(".icon-Escuela-DBD");
-var alumnos = document.querySelector(".icon-Alumnos-DBD");
+﻿var alumnos = document.querySelector(".icon-Alumnos-DBD");
 var cicloEscolar = document.querySelector(".icon-CicloEscolar-DBD");
 var grupoAlumnos = document.querySelector(".icon-GrupoAlumnos-DBD");
 var largeData = document.querySelector(".icon-LargeData-DBD");
@@ -12,7 +11,6 @@ var profesores = document.querySelector(".icon-Profesores-DBD");
 var tutorAlumnos = document.querySelector(".icon-TutorAlumnos-DBD");
 var tutores = document.querySelector(".icon-Tutores-DBD");
 
-escuela.innerHTML = `<span class="icon-nav"><i class="fa-solid fa-school"></i></span>`
 alumnos.innerHTML = `<span class="icon-nav"><i class="fa-solid fa-address-book"></i></span>`
 cicloEscolar.innerHTML = `<span class="icon-nav"><i class="fa-solid fa-arrows-spin"></i></span>`
 grupoAlumnos.innerHTML = `<span class="icon-nav"><i class="fa-solid fa-users-viewfinder"></i></span>`

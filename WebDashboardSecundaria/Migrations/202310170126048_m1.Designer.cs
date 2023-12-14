@@ -13,7 +13,7 @@ namespace WebDashboardSecundaria.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202310102025578_m1"; }
+            get { return "202310170126048_m1"; }
         }
         
         string IMigrationMetadata.Source

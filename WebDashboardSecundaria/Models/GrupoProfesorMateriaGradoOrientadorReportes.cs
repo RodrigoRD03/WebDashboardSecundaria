@@ -16,15 +16,15 @@ namespace WebDashboardSecundaria.Models
 
         public int ID { get; set; }
 
-        public int GrupoID { get; set; }
+        public int GrupoesID { get; set; }
 
-        public int ProfesorID { get; set; }
+        public int ProfesorsID { get; set; }
 
-        public int MateriaGradoID { get; set; }
+        public int MateriaGradoesID { get; set; }
 
-        public int OrientadorID { get; set; }
+        public int OrientadorsID { get; set; }
 
-        public int CicloEscolarID { get; set; }
+        public int CicloEscolarsID { get; set; }
 
         public virtual CicloEscolars CicloEscolars { get; set; }
 

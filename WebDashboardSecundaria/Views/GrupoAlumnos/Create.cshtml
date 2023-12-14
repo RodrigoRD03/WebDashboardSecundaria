@@ -1,4 +1,4 @@
-﻿@model WebDashboardSecundaria.Models.GrupoAlumnoes
+﻿@Model WebDashboardSecundaria.Models.GrupoAlumnoes
 
 @{
     ViewBag.Title = "Create";
@@ -16,18 +16,18 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.GrupoID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.GrupoID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.GrupoID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.GrupoID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.GrupoID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.GrupoID, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.AlumnoID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.AlumnoID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AlumnoID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AlumnoID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.AlumnoID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.AlumnoID, "", new { @class = "text-danger" })
             </div>
         </div>
 

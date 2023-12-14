@@ -20,7 +20,7 @@ namespace WebDashboardSecundaria.Models
 
         public bool Estatus { get; set; }
 
-        public int EscuelaID { get; set; }
+        public int EscuelasID { get; set; }
 
         public virtual Escuelas Escuelas { get; set; }
 

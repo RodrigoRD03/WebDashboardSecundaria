@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace WebDashboardSecundaria.Models
 {
-    public partial class Model : DbContext
+    public partial class Modelo : DbContext
     {
-        public Model()
+        public Modelo()
             : base("name=Modelo")
         {
         }

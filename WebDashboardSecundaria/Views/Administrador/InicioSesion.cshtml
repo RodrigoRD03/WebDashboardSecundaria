@@ -1,4 +1,4 @@
-﻿@model WebDashboardSecundaria.Models.Administrador
+﻿@Model WebDashboardSecundaria.Models.Administrador
 
 @{
     Layout = null;
@@ -31,7 +31,7 @@
                                 <i class="fa-solid fa-envelope"></i>
                             </span>
                             <span class="Line-SignUP"></span>
-                            @Html.EditorFor(model => model.Correo, new { htmlAttributes = new { @type = "mail" } })
+                            @Html.EditorFor(Model => Model.Correo, new { htmlAttributes = new { @type = "mail" } })
                             @*<input type="email" name="email" value="" />*@
                         </div>
                         <div class="SignUp-input-password">
@@ -39,7 +39,7 @@
                                 <i class="fa-solid fa-lock"></i>
                             </span>
                             <span class="Line-SignUP"></span>
-                            @Html.EditorFor(model => model.Contraseña, new { htmlAttributes = new { @class = "input-password-su", @id = "password", @type = "password" } })
+                            @Html.EditorFor(Model => Model.Contraseña, new { htmlAttributes = new { @class = "input-password-su", @id = "password", @type = "password" } })
                             @*<input class="input-password-su" type="password" name="password" value="" />*@
                             <span class="Line-SignUP"></span>
                             <span class="IconEye-su">

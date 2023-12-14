@@ -12,7 +12,7 @@ namespace WebDashboardSecundaria.Controllers
 {
     public class MateriasController : Controller
     {
-        private Model db = new Model();
+        private Modelo db = new Modelo();
 
         // GET: Materias
         public ActionResult Index()

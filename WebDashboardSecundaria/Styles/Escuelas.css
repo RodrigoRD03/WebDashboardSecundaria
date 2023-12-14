@@ -149,7 +149,7 @@ a:not(.icon-add-content) {
 }
 
 .option-menu {
-    width: 80px;
+    width: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -227,4 +227,103 @@ a:not(.icon-add-content) {
     background-image: url("../Assets/Img-item2.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.app__secundaria-form_redirections {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon-back {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+    border-radius: 50vh;
+    background-color: #fff;
+}
+
+.route-text {
+    font-size: .9em;
+    color: var(--bg-300);
+}
+
+.line-row {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-200);
+}
+
+.app__secundaria-form_Add {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.app__secundaria-form_Add-title {
+    padding: 20px; 
+    letter-spacing: .6px;
+}
+
+.app__secundaria-form_Add-inputs {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input label {
+    font-size: .95em;
+    margin-left: 10px;
+}
+ 
+
+.form-input input {
+    width: 270px;
+    height: 40px;
+    background: #F5F5F5;
+    padding: 10px;
+
+    outline: none;
+
+    border: none;
+    border-bottom: 2px solid var(--primary-200);
+    border-radius: 5px;
+}
+
+.section-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--text-200);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-btn input{
+    background-color: var(--primary-200);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: .3s;
+}
+
+
+.section-btn input:hover{
+    background-color: var(--primary-300);
 }

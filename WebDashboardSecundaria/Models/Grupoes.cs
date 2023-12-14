@@ -21,9 +21,9 @@ namespace WebDashboardSecundaria.Models
 
         public bool Estatus { get; set; }
 
-        public int EscuelaID { get; set; }
+        public int EscuelasID { get; set; }
 
-        public int GradoID { get; set; }
+        public int GradoesID { get; set; }
 
         public virtual Escuelas Escuelas { get; set; }
 

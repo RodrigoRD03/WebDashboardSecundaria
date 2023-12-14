@@ -16,34 +16,31 @@
         <div>
 
         </div>
-        <div>
+        <div> 
 
-            @Html.ActionLink("Escuelas", "Index", "Escuelas", null, new { @class = "icon-Escuela-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Alumnos", "Index", "Alumnoes", null, new { @class = "icon-Alumnos-DBD", title = "Alumnos" })
 
-            @Html.ActionLink("Alumnos", "Index", "Alumnoes", null, new { @class = "icon-Alumnos-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("CicloEscolar", "Index", "CicloEscolar", null, new { @class = "icon-CicloEscolar-DBD", title = "Ciclos Escolares" })
 
-            @Html.ActionLink("CicloEscolar", "Index", "CicloEscolar", null, new { @class = "icon-CicloEscolar-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Grupos", "Index", "Grupos", null, new { @class = "icon-Grupos-DBD", title = "Grupos" })
 
-            @Html.ActionLink("GrupoAlumnos", "Index", "GrupoAlumnos", null, new { @class = "icon-GrupoAlumnos-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("GrupoAlumnos", "Index", "GrupoAlumnos", null, new { @class = "icon-GrupoAlumnos-DBD", title = "Vincular Alumno a Grupos" })
 
-            @Html.ActionLink("GrupoProfesorMateriaGradoOrientadorReportes", "Index", "GrupoProfesorMateriaGradoOrientadorReportes", null, new { @class = "icon-LargeData-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Grados", "Index", "Gradoes", null, new { @class = "icon-Grados-DBD", title = "Grados" })
 
-            @Html.ActionLink("Grupos", "Index", "Grupos", null, new { @class = "icon-Grupos-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Materias", "Index", "Materias", null, new { @class = "icon-Materias-DBD", title = "Materias" })
 
-            @Html.ActionLink("Grados", "Index", "Gradoes", null, new { @class = "icon-Grados-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("MateriaGrados", "Index", "MateriaGrados", null, new { @class = "icon-MateriaGrados-DBD", title = "Vincular Materias por Grados" })
 
-            @Html.ActionLink("MateriaGrados", "Index", "MateriaGrados", null, new { @class = "icon-MateriaGrados-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Orientadores", "Index", "Orientadores", null, new { @class = "icon-Orientadores-DBD", title = "Orientadores" })
 
-            @Html.ActionLink("Materias", "Index", "Materias", null, new { @class = "icon-Materias-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Profesores", "Index", "Profesores", null, new { @class = "icon-Profesores-DBD", title = "Profesores" })
 
-            @Html.ActionLink("Orientadores", "Index", "Orientadores", null, new { @class = "icon-Orientadores-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("Tutores", "Index", "Tutores", null, new { @class = "icon-Tutores-DBD", title = "Tutores" })
 
-            @Html.ActionLink("Profesores", "Index", "Profesores", null, new { @class = "icon-Profesores-DBD", title = "Texto del Tooltip" })
+            @Html.ActionLink("TutorAlumnos", "Index", "TutorAlumnos", null, new { @class = "icon-TutorAlumnos-DBD", title = "Vincular Tutores a Alumnos" })
 
-            @Html.ActionLink("TutorAlumnos", "Index", "TutorAlumnos", null, new { @class = "icon-TutorAlumnos-DBD", title = "Texto del Tooltip" })
-
-            @Html.ActionLink("Tutores", "Index", "Tutores", null, new { @class = "icon-Tutores-DBD", title = "Texto del Tooltip" })
-
+            @Html.ActionLink("GrupoProfesorMateriaGradoOrientadorReportes", "Index", "GrupoProfesorMateriaGradoOrientadorReportes", null, new { @class = "icon-LargeData-DBD", title = "Vincular Datos" })
 
 
         </div>
@@ -55,10 +52,6 @@
     </nav>
     <div class="app__secundaria-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
     </div>
 
 

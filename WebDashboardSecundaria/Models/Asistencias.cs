@@ -12,7 +12,7 @@ namespace WebDashboardSecundaria.Models
 
         public int Fecha { get; set; }
 
-        public int AlumnoID { get; set; }
+        public int AlumnoesID { get; set; }
 
         public virtual Alumnoes Alumnoes { get; set; }
     }

@@ -1,4 +1,4 @@
-﻿@model WebDashboardSecundaria.Models.GrupoProfesorMateriaGradoOrientadorReportes
+﻿@Model WebDashboardSecundaria.Models.GrupoProfesorMateriaGradoOrientadorReportes
 
 @{
     ViewBag.Title = "Create";
@@ -16,42 +16,42 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.GrupoID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.GrupoID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.GrupoID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.GrupoID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.GrupoID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.GrupoID, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ProfesorID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.ProfesorID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ProfesorID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ProfesorID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.ProfesorID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.ProfesorID, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.MateriaGradoID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.MateriaGradoID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.MateriaGradoID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.MateriaGradoID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.MateriaGradoID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.MateriaGradoID, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.OrientadorID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.OrientadorID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OrientadorID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.OrientadorID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.OrientadorID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.OrientadorID, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.CicloEscolarID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(Model => Model.CicloEscolarID, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.CicloEscolarID, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.CicloEscolarID, "", new { @class = "text-danger" })
+                @Html.EditorFor(Model => Model.CicloEscolarID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(Model => Model.CicloEscolarID, "", new { @class = "text-danger" })
             </div>
         </div>
 

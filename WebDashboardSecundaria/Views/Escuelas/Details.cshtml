@@ -1,4 +1,4 @@
-﻿@model WebDashboardSecundaria.Models.Escuelas
+﻿@Model WebDashboardSecundaria.Models.Escuelas
 
 @{
     Layout = null;
@@ -37,47 +37,29 @@
     </nav>
     <div class="app__secundaria-content">
         <div>
-            <h4>Escuelas</h4>
-            <hr />
-            <dl class="dl-horizontal">
-                <dt>
-                    @Html.DisplayNameFor(model => model.Administrador.Nombre)
-                </dt>
+            <div class="app__secundaria-form_redirections">
+                <div>
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "redirection-icon" })
+                </div>
+                <p class="route-text">Inicio / Escuela / Detalles</p>
+            </div>
+            <div class="-horizontal">
 
-                <dd>
-                    @Html.DisplayFor(model => model.Administrador.Nombre)
-                </dd>
+                    @Html.DisplayFor(Model => Model.Administrador.Nombre)
+                    @Html.DisplayFor(Model => Model.Nombre)
+                    @Html.DisplayFor(Model => Model.Direccion)
+                    @Html.DisplayFor(Model => Model.Estatus)
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.Nombre)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Nombre)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Direccion)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Direccion)
-                </dd>
-
-                <dt>
-                    @Html.DisplayNameFor(model => model.Estatus)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.Estatus)
-                </dd>
-
-            </dl>
+            <div/>
         </div>
         <p>
             @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
             @Html.ActionLink("Back to List", "Index")
         </p>
     </div>
+    <script>
+        var redirection = document.querySelector(".redirection-icon");
+        redirection.innerHTML = `<span class="icon-back"><i class="fa-solid fa-reply"></i></span>`
+    </script>
 </body>
 </html>

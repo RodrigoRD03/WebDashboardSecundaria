@@ -23,7 +23,7 @@ datails.forEach((detail) => {
     detail.innerHTML = `<p>Detalles</p> <span><i class="fa-solid fa-magnifying-glass"></i></span>`
 })
 delates.forEach((delate) => {
-    delate.innerHTML = `<p>Eliminar</p> <span><i class="fa-solid fa-trash"></i></span>`
+    delate.innerHTML = `<p>Suspender</p> <span><i class="fa-solid fa-trash"></i></span>`
 })
 
 dotsElements.forEach((dotsElement) => {

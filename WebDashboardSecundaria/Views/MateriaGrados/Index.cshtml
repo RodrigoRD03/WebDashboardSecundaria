@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebDashboardSecundaria.Models.MateriaGradoes>
+﻿@Model IEnumerable<WebDashboardSecundaria.Models.MateriaGradoes>
 
 @{
     ViewBag.Title = "Index";
@@ -13,10 +13,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.MateriaID)
+            @Html.DisplayNameFor(Model => Model.MateriaID)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.GradoID)
+            @Html.DisplayNameFor(Model => Model.GradoID)
         </th>
         <th></th>
     </tr>
@@ -24,10 +24,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.MateriaID)
+            @Html.DisplayFor(ModelItem => item.MateriaID)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.GradoID)
+            @Html.DisplayFor(ModelItem => item.GradoID)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

@@ -175,9 +175,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202310102025578_m1.cs" />
-    <Compile Include="Migrations\202310102025578_m1.designer.cs">
-      <DependentUpon>202310102025578_m1.cs</DependentUpon>
+    <Compile Include="Migrations\202310170126048_m1.cs" />
+    <Compile Include="Migrations\202310170126048_m1.designer.cs">
+      <DependentUpon>202310170126048_m1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Administrador.cs" />
@@ -196,7 +196,7 @@
     <Compile Include="Models\JWT\JWTAttribute.cs" />
     <Compile Include="Models\MateriaGradoes.cs" />
     <Compile Include="Models\Materias.cs" />
-    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\Modelo.cs" />
     <Compile Include="Models\Orientadors.cs" />
     <Compile Include="Models\Profesors.cs" />
     <Compile Include="Models\Reportes.cs" />
@@ -301,8 +301,8 @@
     <Folder Include="Controllers\ControllersMovil\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202310102025578_m1.resx">
-      <DependentUpon>202310102025578_m1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202310170126048_m1.resx">
+      <DependentUpon>202310170126048_m1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

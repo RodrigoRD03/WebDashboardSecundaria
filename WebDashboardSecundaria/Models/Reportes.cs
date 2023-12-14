@@ -16,9 +16,9 @@ namespace WebDashboardSecundaria.Models
 
         public bool ValidadoTutor { get; set; }
 
-        public int AlumnoID { get; set; }
+        public int AlumnoesID { get; set; }
 
-        public int GrupoProfesorMateriaGradoOrientadorReporteID { get; set; }
+        public int GrupoProfesorMateriaGradoOrientadorReportesID { get; set; }
 
         public virtual Alumnoes Alumnoes { get; set; }
 

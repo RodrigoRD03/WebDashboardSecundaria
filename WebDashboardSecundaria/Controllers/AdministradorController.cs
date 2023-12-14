@@ -13,7 +13,7 @@ namespace WebDashboardSecundaria.Controllers
 {
     public class AdministradorController : Controller
     {
-        private Model db = new Model();
+        private Modelo db = new Modelo();
 
         // GET: Administrador
         public ActionResult Index()

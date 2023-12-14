@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebDashboardSecundaria.Models.Escuelas>
+﻿@Model IEnumerable<WebDashboardSecundaria.Models.Escuelas>
 
 @{
     Layout = null;
@@ -52,15 +52,15 @@
                     <div class="app__secundaria-item_menu">
                         @Html.ActionLink("Editar", "Edit", new { id = item.ID }, new { @class = "option-menu icon-edit-es" })
                         @Html.ActionLink("Detalles", "Details", new { id = item.ID }, new { @class = "option-menu icon-details-es" })
-                        @Html.ActionLink("Eliminar", "Delete", new { id = item.ID }, new { @class = "option-menu icon-delate-es" })
+                        @Html.ActionLink("Suspender", "Delete", new { id = item.ID }, new { @class = "option-menu icon-delate-es" })
                     </div>
                     <span class="icon-menu_item">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </span>
                     <div class="app__secundaria-item_info">
                         <div class="app__secundaria-item_info-NL">
-                            <div>@Html.DisplayFor(modelItem => item.Nombre)</div>
-                            <div>@Html.DisplayFor(modelItem => item.Direccion)</div>
+                            <div>@Html.DisplayFor(ModelItem => item.Nombre)</div>
+                            <div>@Html.DisplayFor(ModelItem => item.Direccion)</div>
                         </div>
                         <div class="app__secundaria-item_info-btn">
                             <span>

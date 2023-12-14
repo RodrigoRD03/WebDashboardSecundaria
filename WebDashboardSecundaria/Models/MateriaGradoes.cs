@@ -16,9 +16,9 @@ namespace WebDashboardSecundaria.Models
 
         public int ID { get; set; }
 
-        public int MateriaID { get; set; }
+        public int MateriasID { get; set; }
 
-        public int GradoID { get; set; }
+        public int GradoesID { get; set; }
 
         public virtual Gradoes Gradoes { get; set; }
 
